@@ -101,7 +101,35 @@ copyright {
 }
 
 @media all and (min-width: 550px) {
+    body {
+        padding: 100px 15%;
+    }
+
+    #title {
+        font-size: 1.8rem;
+    }
+
+    #title b {
+        font-size: 1.8rem;
+    }
+
     form {
         flex-direction: row;
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    #input {
+        margin: 0px;
+        width: 63%
+    }
+
+    #submit {
+        margin: 0px;
+        width: 35%;
+    }
+
+    #illustration {
+        /* transform: scale(50%); */
     }
 }
