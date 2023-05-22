@@ -5,30 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <img id="logo" src="images/logo.svg">
 
-  We are launching soon!
+  <div id="title">We are launching <b>soon!</b></div>
 
-  Subscribe and get notified
+  <subtitle>Subscribe and get notified</subtitle>
 
-  Notify Me
+  <form>
+    <input id="input" type="text" placeholder="Your email address...">
+    <input id="submit" type="submit" value="Notify Me">
+  </form>
 
-  &copy; Copyright Ping. All rights reserved.
+  <img id = "illustration" src="images/illustration-dashboard.png">
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <logos>
+    <div class="logo-container">
+      <img id="facebook-logo" src="images/facebook-logo.png">
+    </div>
+
+    <div class="logo-container">
+      <img id="twitter-logo" src="images/twitter-logo.png">
+    </div>
+
+    <div class="logo-container">
+      <img id="instagram-logo" src="images/instagram-logo.jpg">
+    </div>
+  </logos>
+  <copyright>&copy; Copyright Ping. All rights reserved.</copyright>
+
 </body>
+  <script src="script.js"></script>
 </html>
