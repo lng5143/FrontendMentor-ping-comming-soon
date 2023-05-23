@@ -35,10 +35,16 @@ form {
     align-items: center;
     width: 100%;
     padding: 0px 20px;
+    margin-bottom: 50px;
+}
+
+#input-container {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
 }
 
 #input {
-    margin-bottom: 10px;
     height: 40px;
     width: 100%;
     border-radius: 20px;
@@ -46,10 +52,18 @@ form {
     font-size: 0.6rem;
     padding: 0px 30px;
     opacity: 70%;
+    margin-bottom: 10px;
+}
+
+#input-container p {
+    font-size: 0.5rem;
+    font-style: italic;
+    color: red;
+    align-self: center;
+    margin-bottom: 20px;
 }
 
 #submit {
-    margin-bottom: 50px;
     height: 40px;
     width: 100%;
     border-radius: 20px;
@@ -117,19 +131,36 @@ copyright {
         flex-direction: row;
         margin-bottom: 50px;
         justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #input-container {
+        flex-direction: column;
+        margin-right: 15px;
     }
 
     #input {
         margin: 0px;
-        width: 63%
+        width: 100%
+    }
+
+    #input-container p {
+        align-self: flex-start;
+        padding-left: 20px;
+        margin-top: 10px;
     }
 
     #submit {
         margin: 0px;
         width: 35%;
+        cursor: pointer;
     }
 
-    #illustration {
-        /* transform: scale(50%); */
+    #submit:hover {
+        background-color: hsl(223, 98%, 75%);
+    }
+
+    logos {
+        width: 20%;
     }
 }
